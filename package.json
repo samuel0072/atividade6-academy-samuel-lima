@@ -1,0 +1,29 @@
+{
+  "name": "atividade6-academy-samuel-lima",
+  "version": "1.0.0",
+  "description": "Repositório para implementação de testes da atividade 6 da turma de QA da Raro Academy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samuel0072/atividade6-academy-samuel-lima.git"
+  },
+  "keywords": [
+    "cypress"
+  ],
+  "author": "Samuel Lima",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samuel0072/atividade6-academy-samuel-lima/issues"
+  },
+  "homepage": "https://github.com/samuel0072/atividade6-academy-samuel-lima#readme",
+  "dependencies": {
+    "cypress": "^9.6.0",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/support/steps"
+  }
+}
