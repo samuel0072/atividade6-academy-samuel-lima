@@ -60,3 +60,25 @@ Feature: Atualizar Usuário
             | open minded | aaa@email.comaaa@email.com   | Formato de e-mail inválido  |
             | open minded | aaa#@email.com               | Formato de e-mail inválido  |
             | open minded | aaa@email.c                  | Formato de e-mail inválido  |
+
+    Scenario Outline: Atualizar usuário com dados de comprimento inválido
+        When aperto em editar
+        And preencho o formulário
+        | nome  | <nome>  |
+        | email | <email> |
+        And aperto em salvar
+        Then vejo a mensagem de validação de campo "<mensagem>"
+        
+        Examples:
+            | nome    | email                       | mensagem                                       |
+            | a       | justkeepondancing@smile.katy| Informe pelo menos 4 letras para o nome.       |
+            | aa      | justkeepondancing@smile.katy| Informe pelo menos 4 letras para o nome.       |
+            | aaa     | justkeepondancing@smile.katy| Informe pelo menos 4 letras para o nome.       |
+            | Daisies | a                           | Informe pelo menos 4 caracteres para o e-mail. |
+            | Daisies | aa                          | Informe pelo menos 4 caracteres para o e-mail. |
+            | Daisies | aaa                         | Informe pelo menos 4 caracteres para o e-mail. |
+            #nome de 101 caracteres
+            | Chrochrochrochrochrochrochrochrochrochrochrochrochrochrochrochrochrochrochrochrochrochrochrochrochroc | justkeepondancing@smile.katy| Informe no máximo 100 caracteres para o nome |
+            #email de 61 caracteres
+            | Daisies | chrochrochrochrochrochrochrochrochrochrochrochrocho@email.com  | Informe no máximo 60 caracteres para o e-mail |
+        
