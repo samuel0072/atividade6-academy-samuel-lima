@@ -3,14 +3,27 @@ Feature: Criar Usuário
     Desejo registrar informações de usuário
     Para poder manipular estas informações livremente
 
-    Scenario: Preencher dados corretamente
+    Scenario Outline: Preencher dados corretamente
         Given acessei a pagina de novo usuário
         When preencho o formulário
-        | nome  | California King Bed |
-        | email | loud@rihanna.com    |
+        | nome  | <nome> |
+        | email | <email>|
         And envio o formulário
         Then vejo a mensagem "Usuário salvo com sucesso!"
-
+        Examples:
+            | nome                | email                                 |
+            | chro                | allieverwantedwaslove@chromatica.gaga | 
+            | California King Bed | allieverwantedwaslove@chromatica.gaga | 
+            | Dra. Laís Caldas    | allieverwantedwaslove@chromatica.gaga | 
+            | Dra. Laís Caldas    | a@e.com                               | 
+            #99 caracteres no nome
+            |chrochrochrochrochrochrochrochrochrochrochrochrochrochrochrochrochrochrochrochrochrochrochrochrochr|a@e.com|
+            #100 caracteres no nome
+            |chrochrochrochrochrochrochrochrochrochrochrochrochrochrochrochrochrochrochrochrochrochrochrochrochro|a@e.com|
+            #59 carateres no email  
+            | Dra. Laís Caldas    | chrochrochrochrochrochrochrochrochrochrochrochroc@email.com | 
+            #60 caracteres no nome
+            | Dra. Laís Caldas    | chrochrochrochrochrochrochrochrochrochrochrochroch@email.com | 
     Scenario Outline: Preencher dados faltantes
         Given acessei a pagina de novo usuário
         When preencho o formulário
@@ -40,4 +53,5 @@ Feature: Criar Usuário
             | open minded | aaa,@email.com@email.com     | Formato de e-mail inválido  |
             | open minded | aaa@email.comaaa@email.com   | Formato de e-mail inválido  |
             | open minded | aaa#@email.com               | Formato de e-mail inválido  |
+            | open minded | aaa@email.c               | Formato de e-mail inválido  |
             
