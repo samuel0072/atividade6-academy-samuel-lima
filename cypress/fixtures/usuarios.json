@@ -1,0 +1,79 @@
+[
+    {
+      "id": "1010d818-735b-4ac3-ae77-eeaf72dfc7ee",
+      "name": "joana",
+      "email": "joana@joana.com",
+      "createdAt": "2022-05-07T18:07:51.512Z",
+      "updatedAt": "2022-05-07T18:07:51.512Z"
+    },
+    {
+      "id": "f79aff83-0d9a-4240-bde2-40206bc86bad",
+      "name": "oioi",
+      "email": "tchau@tchau.com",
+      "createdAt": "2022-05-07T19:09:44.734Z",
+      "updatedAt": "2022-05-07T19:09:44.734Z"
+    },
+    {
+      "id": "33a781c0-17dc-4fde-91c8-13be651330bb",
+      "name": "monicas",
+      "email": "babalu@ko.com",
+      "createdAt": "2022-05-07T17:50:10.027Z",
+      "updatedAt": "2022-05-07T19:22:37.650Z"
+    },
+    {
+      "id": "04b0753b-242f-485c-857e-ee9bf5851b46",
+      "name": "Welcome to new york",
+      "email": "1989@tv.com",
+      "createdAt": "2022-05-07T19:22:58.202Z",
+      "updatedAt": "2022-05-07T19:22:58.202Z"
+    },
+    {
+      "id": "82ea53cc-8da1-469d-8ed8-34c2532b47e1",
+      "name": "paragaricotirimirruaros",
+      "email": "123@123.com",
+      "createdAt": "2022-05-07T18:01:54.879Z",
+      "updatedAt": "2022-05-07T19:23:43.263Z"
+    },
+    {
+      "id": "678de16d-4e28-42b6-b232-931ddad290c1",
+      "name": "temalguemai tem sim",
+      "email": "oitudobem@ola.com",
+      "createdAt": "2022-05-07T19:10:22.554Z",
+      "updatedAt": "2022-05-07T19:38:18.939Z"
+    },
+    {
+      "id": "cbc32abd-8cba-4911-8899-567ee915ec56",
+      "name": "Raro",
+      "email": "raro@raro.com",
+      "createdAt": "2022-05-07T19:38:19.884Z",
+      "updatedAt": "2022-05-07T19:38:19.884Z"
+    },
+    {
+      "id": "77210339-b29b-48a9-aa8c-98cb6bcb79f4",
+      "name": "queen",
+      "email": "contato@email.com",
+      "createdAt": "2022-05-07T21:06:32.906Z",
+      "updatedAt": "2022-05-07T21:06:32.906Z"
+    },
+    {
+      "id": "9f07dc1f-fa29-4d44-978c-e77a0e5c0dca",
+      "name": "Queen",
+      "email": "rock@email.com",
+      "createdAt": "2022-05-07T21:26:53.956Z",
+      "updatedAt": "2022-05-07T21:26:53.956Z"
+    },
+    {
+      "id": "8fa33414-ff09-44d6-ae3d-6c1467237aef",
+      "name": "Queen",
+      "email": "rockinroll@email.com",
+      "createdAt": "2022-05-07T21:28:27.492Z",
+      "updatedAt": "2022-05-07T21:28:27.492Z"
+    },
+    {
+      "id": "9ad01b21-0747-4630-8d22-50dcafc4652a",
+      "name": "Queen",
+      "email": "rockroll@email.com",
+      "createdAt": "2022-05-07T21:34:35.092Z",
+      "updatedAt": "2022-05-07T21:34:35.092Z"
+    }
+  ]
