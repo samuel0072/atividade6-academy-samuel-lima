@@ -42,3 +42,21 @@ Feature: Atualizar Usuário
             | nome                    | email                                  | mensagem                       |
             |                         | allieverwantedwaslove@chromatica.gaga  | O campo nome é obrigatório.    |
             | I want your stupid love |                                        | O campo e-mail é obrigatório.  |
+
+    Scenario Outline: Atualizar usuário com dados de formato inválido
+        When aperto em editar
+        And preencho o formulário
+        | nome  | <nome>  |
+        | email | <email> |
+        And aperto em salvar
+        Then vejo a mensagem de validação de campo "<mensagem>"
+
+        Examples:
+            | nome        | email                        | mensagem                    |
+            | akjs;       | sourcandy@chromatica.gaga    | Formato do nome é inválido. |
+            | akjs@976$%  | sourcandy@chromatica.gaga    | Formato do nome é inválido. |
+            | open minded | aaa@                         | Formato de e-mail inválido  |
+            | open minded | aaa,@email.com@email.com     | Formato de e-mail inválido  |
+            | open minded | aaa@email.comaaa@email.com   | Formato de e-mail inválido  |
+            | open minded | aaa#@email.com               | Formato de e-mail inválido  |
+            | open minded | aaa@email.c                  | Formato de e-mail inválido  |
