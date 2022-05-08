@@ -2,6 +2,7 @@ class DetalhesUsuarioPage {
     inputId = 'input[name="id"]';
     inputNome = 'input#userName';
     inputEmail = 'input#userEmail';
+    formulario = 'form';
 
     botaoVoltar = '';
 
@@ -28,6 +29,10 @@ class DetalhesUsuarioPage {
             botao.clear();
             botao.type(email);
         }
+    }
+
+    mensagemValidacaoInput(mensagem) {
+        cy.contains(this.formulario, mensagem).should("be.visible");
     }
 }
 

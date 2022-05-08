@@ -50,3 +50,7 @@ Then("sou redirecionado para a tela inicial", ()=> {
 Then("vejo a mensagem de sucesso {string}", (mensagem)=> {
     listarUsuarios.verificarMensagem(mensagem);
 });
+
+Then("vejo a mensagem de validação de campo {string}", (mensagem) => {
+    detalhesUsuarioPage.mensagemValidacaoInput(mensagem);
+});

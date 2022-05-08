@@ -3,7 +3,7 @@ Feature: Atualizar Usuário
     Desejo atualizar as informações de determinado usuário
     Para ter o registro de suas informações atualizadas
 
-    Scenario Outline: 
+    Scenario Outline: Atualizar usuário com dados válidos
         Given estou na tela de detalhes de um usuário
         When aperto em editar
         And preencho o formulário
@@ -27,3 +27,17 @@ Feature: Atualizar Usuário
             | Dra. Laís Caldas    | chrochrochrochrochrochrochrochrochrochrochrochroc@email.com | 
             #60 caracteres no nome
             | Dra. Laís Caldas    | chrochrochrochrochrochrochrochrochrochrochrochroch@email.com | 
+    
+    Scenario Outline: Atualizar usuário com dados faltantes
+        Given estou na tela de detalhes de um usuário
+        When aperto em editar
+        And preencho o formulário
+        | nome  | <nome>  |
+        | email | <email> |
+        And aperto em salvar
+        Then vejo a mensagem de validação de campo "<mensagem>"
+
+        Examples:
+            | nome                    | email                                  | mensagem                       |
+            |                         | allieverwantedwaslove@chromatica.gaga  | O campo nome é obrigatório.    |
+            | I want your stupid love |                                        | O campo e-mail é obrigatório.  |
