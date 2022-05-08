@@ -3,8 +3,10 @@ Feature: Atualizar Usuário
     Desejo atualizar as informações de determinado usuário
     Para ter o registro de suas informações atualizadas
 
-    Scenario Outline: Atualizar usuário com dados válidos
+    Background: Acessar a tela de detalhes do usuário
         Given estou na tela de detalhes de um usuário
+
+    Scenario Outline: Atualizar usuário com dados válidos
         When aperto em editar
         And preencho o formulário
         | nome  | <nome>  |
@@ -29,7 +31,6 @@ Feature: Atualizar Usuário
             | Dra. Laís Caldas    | chrochrochrochrochrochrochrochrochrochrochrochroch@email.com | 
     
     Scenario Outline: Atualizar usuário com dados faltantes
-        Given estou na tela de detalhes de um usuário
         When aperto em editar
         And preencho o formulário
         | nome  | <nome>  |
