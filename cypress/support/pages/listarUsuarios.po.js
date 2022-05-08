@@ -13,6 +13,8 @@ class ListarUsuarios {
     botaoPaginacaoVoltar = "#paginacaoVoltar";
     botaoPaginacaoProximo = "#paginacaoProximo";
     liPaginacaoAtual = "#paginacaoAtual";
+
+    root = "#root";
     
     itensPorPagina = 6;
     minQuantItensPagina = 1;
@@ -20,6 +22,14 @@ class ListarUsuarios {
 
     visitar() {
         cy.visit("");
+    }
+
+    verificarMensagem(mensagem) {
+        cy.contains(this.root, mensagem).should("be.visible");
+    }
+
+    verificarMensagemComLink(mensagem, link) {
+        cy.contains(mensagem).should("have.attr", "href", link).and("be.visible");
     }
 }
 
