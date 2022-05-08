@@ -81,7 +81,7 @@ Feature: Atualizar Usuário
             | Chrochrochrochrochrochrochrochrochrochrochrochrochrochrochrochrochrochrochrochrochrochrochrochrochroc | justkeepondancing@smile.katy| Informe no máximo 100 caracteres para o nome |
             #email de 61 caracteres
             | Daisies | chrochrochrochrochrochrochrochrochrochrochrochrocho@email.com  | Informe no máximo 60 caracteres para o e-mail |
-        
+ 
     Scenario: Atualizar usuário com email existente
         And já existe um usuario cadastrado
         When aperto em editar
@@ -90,3 +90,12 @@ Feature: Atualizar Usuário
         | email | thecharmpark@email.com|
         And aperto em salvar
         Then vejo a mensagem de erro "Este e-mail já é utilizado por outro usuário."
+
+    Scenario: Atualizar usuário que não existe
+        And o usuário não existe no sistema
+        When aperto em editar
+        And preencho o formulário
+        | nome  | hanagasakumichi       |
+        | email | thecharmpark@email.com|
+        And aperto em salvar
+        Then vejo a mensagem de erro "As informações não foram atualizadas."

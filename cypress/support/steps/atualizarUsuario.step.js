@@ -15,8 +15,6 @@ Given("estou na tela de detalhes de um usuário", ()=> {
     });
 
     //intercept para casos de sucesso   
-    var id = "id-de-teste";
-    var url = Cypress.env("CRUD_API_URL") + "/users/" + id;
     cy.intercept({
         method: "PUT",
         url: url
@@ -29,8 +27,6 @@ Given("estou na tela de detalhes de um usuário", ()=> {
 });
 
 Given("já existe um usuario cadastrado", ()=> {
-    var id = "id-de-teste";
-    var url = Cypress.env("CRUD_API_URL") + "/users/" + id;
     
     //intercept de email já utilizado 
     var id = "id-de-teste";
@@ -43,6 +39,19 @@ Given("já existe um usuario cadastrado", ()=> {
         fixture: "emailUsuarioExiste.json"
     });
 });
+
+Given("o usuário não existe no sistema", ()=> {
+    //intercept de usuário inexistente 
+    var id = "id-de-teste";
+    var url = Cypress.env("CRUD_API_URL") + "/users/" + id;
+    cy.intercept({
+        method: "PUT",
+        url: url
+    }, {
+        statusCode: 404
+    });
+});
+
 
 /* -------------- When's -------------- */
 When("aperto em editar", () => {
