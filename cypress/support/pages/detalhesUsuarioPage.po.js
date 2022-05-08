@@ -6,6 +6,8 @@ class DetalhesUsuarioPage {
 
     botaoVoltar = '';
 
+    root = "#root"
+
     clicarBotaoSalvar() {
         return cy.contains("button", "Salvar").click();
     }
@@ -33,6 +35,10 @@ class DetalhesUsuarioPage {
 
     mensagemValidacaoInput(mensagem) {
         cy.contains(this.formulario, mensagem).should("be.visible");
+    }
+
+    verificarMensagemErro(mensagem) {
+        cy.contains(this.root, mensagem).should("be.visible");
     }
 }
 

@@ -82,3 +82,11 @@ Feature: Atualizar Usuário
             #email de 61 caracteres
             | Daisies | chrochrochrochrochrochrochrochrochrochrochrochrocho@email.com  | Informe no máximo 60 caracteres para o e-mail |
         
+    Scenario: Atualizar usuário com email existente
+        And já existe um usuario cadastrado
+        When aperto em editar
+        And preencho o formulario com o email dele
+        | nome  | hanagasakumichi       |
+        | email | thecharmpark@email.com|
+        And aperto em salvar
+        Then vejo a mensagem de erro "Este e-mail já é utilizado por outro usuário."

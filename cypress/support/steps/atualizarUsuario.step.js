@@ -28,6 +28,22 @@ Given("estou na tela de detalhes de um usuário", ()=> {
     cy.visit("/users/" + id);
 });
 
+Given("já existe um usuario cadastrado", ()=> {
+    var id = "id-de-teste";
+    var url = Cypress.env("CRUD_API_URL") + "/users/" + id;
+    
+    //intercept de email já utilizado 
+    var id = "id-de-teste";
+    var url = Cypress.env("CRUD_API_URL") + "/users/" + id;
+    cy.intercept({
+        method: "PUT",
+        url: url
+    }, {
+        statusCode: 422,
+        fixture: "emailUsuarioExiste.json"
+    });
+});
+
 /* -------------- When's -------------- */
 When("aperto em editar", () => {
     detalhesUsuarioPage.clicarBotaoEditar();
@@ -41,6 +57,12 @@ When("aperto em salvar", () => {
     detalhesUsuarioPage.clicarBotaoSalvar();
 });
 
+When("preencho o formulario com o email dele", (dados) => {
+    var dadosUsuarios = dados.rowsHash();
+    detalhesUsuarioPage.preencherFormulario(dadosUsuarios.nome, dadosUsuarios.email);
+});
+
+
 /* -------------- Then's -------------- */
 
 Then("sou redirecionado para a tela inicial", ()=> {
@@ -53,4 +75,8 @@ Then("vejo a mensagem de sucesso {string}", (mensagem)=> {
 
 Then("vejo a mensagem de validação de campo {string}", (mensagem) => {
     detalhesUsuarioPage.mensagemValidacaoInput(mensagem);
+});
+
+Then("vejo a mensagem de erro {string}", (mensagem) => {
+    detalhesUsuarioPage.verificarMensagemErro(mensagem);
 });
