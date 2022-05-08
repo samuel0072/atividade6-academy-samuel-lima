@@ -2,6 +2,7 @@
     "baseUrl": "https://academy-crud-frontend.herokuapp.com",
     "testFiles": "**/*.feature",
     "env" : {
-        "TAGS" : "not @ignore"
+        "TAGS" : "not @ignore",
+        "CRUD_API_URL": "https://crud-api-academy.herokuapp.com/api/v1"
     }
 }
