@@ -13,14 +13,19 @@ Given("acessei a pagina de novo usuário", () => {
 })
 
 /* -------------- When's -------------- */
-When("preencho o formulário com informações corretas", (dadosUsuario) => {
+When("preencho o formulário", (dadosUsuario) => {
     var dados = dadosUsuario.rowsHash();
     criarUsuario.preencherFormulario(dados.nome, dados.email);
 });
 When("envio o formulário", () => {
     criarUsuario.enviarFormulario();
 });
+
 /* -------------- Then's -------------- */
 Then("vejo a mensagem {string}", (mensagem) => {
     criarUsuario.verificarMensagem(mensagem);
+});
+
+Then("vejo a mensagem de validação de campo {string}", (mensagem) => {
+    criarUsuario.verificarMensagemValidacaoCampo(mensagem);
 });
