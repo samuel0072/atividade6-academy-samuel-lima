@@ -4,13 +4,21 @@ import {listarUsuarios} from "../pages/listarUsuarios.po";
 /* ------------------------- Given's ------------------------- */
 
 Given("existem usuários cadastrados", () => {
-    cy.intercept("https://crud-api-academy.herokuapp.com/api/v1/users", {
+    var url = Cypress.env("CRUD_API_URL") + "/users";
+    cy.intercept({
+        method: "GET",
+        url: url
+    }, {
         fixture: "usuarios.json"
     }); 
 });
 
 Given("não existem usuários cadastrados", () => {
-    cy.intercept("https://crud-api-academy.herokuapp.com/api/v1/users", []);//sem usuários
+    var url = Cypress.env("CRUD_API_URL") + "/users";
+    cy.intercept({
+        method: "GET",
+        url: url
+    }, []);//sem usuários
 });
 
 /* ------------------------- When's ------------------------- */
