@@ -76,3 +76,13 @@ Feature: Criar Usuário
             | Chrochrochrochrochrochrochrochrochrochrochrochrochrochrochrochrochrochrochrochrochrochrochrochrochroc | justkeepondancing@smile.katy| Informe no máximo 100 caracteres para o nome |
             #email de 61 caracteres
             | Daisies | chrochrochrochrochrochrochrochrochrochrochrochrocho@email.com  | Informe no máximo 60 caracteres para o e-mail |
+        
+    Scenario: Criar usuário com email já existente
+        Given acessei a pagina de novo usuário
+        And existe um usuário cadastrado
+        When informo os dados deste usuário
+        | nome  | nome de teste  |
+        | email | email@email.com|
+        And envio o formulário
+        Then vejo a mensagem de erro "Este e-mail já é utilizado por outro usuário."
+    
