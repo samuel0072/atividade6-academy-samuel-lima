@@ -13,4 +13,4 @@ Feature: Listar Usuários
         Given não existem usuários cadastrados
         When acesso o CRUD Front-end
         Then vejo a mensagem "Ops! Não existe nenhum usuário para ser exibido."
-        And e uma opção para cadastrar um novo usuário com o texto "Cadastre um novo usuário"
+        And vejo uma opção para cadastrar um novo usuário com o texto "Cadastre um novo usuário"

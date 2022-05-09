@@ -47,6 +47,31 @@ class ListarUsuarios {
             cy.contains("button", "Confirmar").click();
         }).should("be.visible");
     }
+
+    verificarDadosUsuario(nome, email) {
+        cy.contains(this.cardsUsuarios, email).within(() => {
+            cy.get(this.nomeUsuario).should("to.contain", nome).and("be.visible");
+            //testa os botões de cada usuário
+            cy.get(this.botaoExcluir).should("be.visible").and("be.enabled");
+            cy.get(this.botaoVerDetalhes).should("be.visible").and("have.attr", "href");
+        }).should("be.visible");
+    }
+
+    avancarPagina() {
+        cy.get(this.botaoPaginacaoProximo).click();
+    }
+
+    voltarPagina() {
+        cy.get(this.botaoPaginacaoVoltar).click();
+    }
+
+    verificarBotaoPaginacaoProximo() {
+        cy.get(this.botaoPaginacaoProximo).should("be.visible");
+    }
+
+    verificarBotaoPaginacaoVoltar() {
+        cy.get(this.botaoPaginacaoVoltar).should("be.visible");
+    }
 }
 
 export var listarUsuarios = new ListarUsuarios();

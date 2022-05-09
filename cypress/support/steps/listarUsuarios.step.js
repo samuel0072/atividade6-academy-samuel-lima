@@ -38,17 +38,19 @@ Then("vejo os dados dos usuários", () => {
         cy.get(listarUsuarios.divCardsUsuarios).should("be.visible");
     
         cy.get(listarUsuarios.cardsUsuarios).should("be.visible");
-        
-        cy.get(listarUsuarios.cardsUsuarios).should((cards) => {
-            expect(cards).to.have.length
-            .within(listarUsuarios.minQuantItensPagina, listarUsuarios.maxQuantItensPagina);
+
+        usuarios.forEach((usuario, index) => {
+            //supondo que o site do CRUD FRONT-END exibe os usuários
+            //conforme aparecem no json
+            //então quando o index(que começa do 0) for um multiplo de itens da página
+            //clico para ir pra próxima página
+            //que é onde estão os demais usuários
+            if((index != 0) && (index % listarUsuarios.itensPorPagina == 0)) {
+                listarUsuarios.avancarPagina();
+            }
+
+            listarUsuarios.verificarDadosUsuario(usuario.name, usuario.email);
         });
-
-        /*usuarios.forEach((usuario) => {
-            cy.get(listarUsuarios.nomeUsuario).should("be.visible").should("have.text", usuario.name);
-            cy.get(listarUsuarios.emailUsuario).should("be.visible");
-        });*/// TODO: verificar os dados dos usuários na página 
-
     });
 });
 
@@ -58,7 +60,7 @@ Then("vejo a mensagem {string}", (mensagem) => {
     listarUsuarios.verificarMensagem(mensagem);
 });
 
-Then("e uma opção para cadastrar um novo usuário com o texto {string}", (mensagem) => {
+Then("vejo uma opção para cadastrar um novo usuário com o texto {string}", (mensagem) => {
     //verifico se tem o texto e se é um link para a página de criar usuário
     listarUsuarios.verificarMensagemComLink(mensagem, "/users/novo");
 });
