@@ -3,9 +3,11 @@ Feature: Criar Usuário
     Desejo registrar informações de usuário
     Para poder manipular estas informações livremente
 
-    Scenario Outline: Preencher dados corretamente
+    Background: Acessar a página de novo usuário
         Given acessei a pagina de novo usuário
         When preencho o formulário
+
+    Scenario Outline: Preencher dados corretamente
         | nome  | <nome> |
         | email | <email>|
         And envio o formulário
@@ -26,7 +28,6 @@ Feature: Criar Usuário
             | Dra. Laís Caldas    | chrochrochrochrochrochrochrochrochrochrochrochroch@email.com | 
    
     Scenario Outline: Preencher dados faltantes
-        Given acessei a pagina de novo usuário
         When preencho o formulário
         | nome  | <nome> |
         | email | <email>|
@@ -39,7 +40,6 @@ Feature: Criar Usuário
             | I want your stupid love |                                        | O campo e-mail é obrigatório.  |
 
     Scenario Outline: Preencher dados com formato inválido
-        Given acessei a pagina de novo usuário
         When preencho o formulário
         | nome  | <nome> |
         | email | <email>|
@@ -57,7 +57,6 @@ Feature: Criar Usuário
             | open minded | aaa@email.c               | Formato de e-mail inválido  |
             
     Scenario Outline: Preencher com dados de comprimento inválido
-        Given acessei a pagina de novo usuário
         When preencho o formulário
         | nome  | <nome> |
         | email | <email>|
@@ -78,7 +77,6 @@ Feature: Criar Usuário
             | Daisies | chrochrochrochrochrochrochrochrochrochrochrochrocho@email.com  | Informe no máximo 60 caracteres para o e-mail |
         
     Scenario: Criar usuário com email já existente
-        Given acessei a pagina de novo usuário
         And existe um usuário cadastrado
         When informo os dados deste usuário
         | nome  | nome de teste  |
