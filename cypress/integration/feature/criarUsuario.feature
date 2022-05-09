@@ -5,9 +5,9 @@ Feature: Criar Usuário
 
     Background: Acessar a página de novo usuário
         Given acessei a pagina de novo usuário
-        When preencho o formulário
 
     Scenario Outline: Preencher dados corretamente
+        When preencho o formulário com os novos dados
         | nome  | <nome> |
         | email | <email>|
         And envio o formulário
@@ -28,7 +28,7 @@ Feature: Criar Usuário
             | Dra. Laís Caldas    | chrochrochrochrochrochrochrochrochrochrochrochroch@email.com | 
    
     Scenario Outline: Preencher dados faltantes
-        When preencho o formulário
+        When preencho o formulário com os novos dados
         | nome  | <nome> |
         | email | <email>|
         And envio o formulário
@@ -40,7 +40,7 @@ Feature: Criar Usuário
             | I want your stupid love |                                        | O campo e-mail é obrigatório.  |
 
     Scenario Outline: Preencher dados com formato inválido
-        When preencho o formulário
+        When preencho o formulário com os novos dados
         | nome  | <nome> |
         | email | <email>|
         And envio o formulário
@@ -57,7 +57,7 @@ Feature: Criar Usuário
             | open minded | aaa@email.c               | Formato de e-mail inválido  |
             
     Scenario Outline: Preencher com dados de comprimento inválido
-        When preencho o formulário
+        When preencho o formulário com os novos dados
         | nome  | <nome> |
         | email | <email>|
         And envio o formulário

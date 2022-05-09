@@ -21,7 +21,7 @@ Given("existe um usuário cadastrado", () => {
 })
 
 /* -------------- When's -------------- */
-When("preencho o formulário", (dadosUsuario) => {
+When("preencho o formulário com os novos dados", (dadosUsuario) => {
     var dados = dadosUsuario.rowsHash();
     criarUsuario.preencherFormulario(dados.nome, dados.email);
 });
