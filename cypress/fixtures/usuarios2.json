@@ -1,0 +1,247 @@
+[
+    {
+      "id": "1300229f-07dd-460e-a639-6f67966f5ee3",
+      "name": "Chico",
+      "email": "c@g.com",
+      "createdAt": "2022-05-09T20:31:32.272Z",
+      "updatedAt": "2022-05-09T20:31:32.272Z"
+    },
+    {
+      "id": "0bc570be-dc15-487f-8c32-3bba92b5f156",
+      "name": "Joãoo",
+      "email": "joao1@raro.com.br",
+      "createdAt": "2022-05-09T20:40:36.726Z",
+      "updatedAt": "2022-05-09T20:40:36.726Z"
+    },
+    {
+      "id": "7001de0a-258f-42fe-85e6-34a5e4674947",
+      "name": "Laura",
+      "email": "laura@laura.com",
+      "createdAt": "2022-05-09T20:52:28.747Z",
+      "updatedAt": "2022-05-09T20:52:28.747Z"
+    },
+    {
+      "id": "b66ce270-5200-4669-aceb-d0f4e7a14d99",
+      "name": "Joãooaaa",
+      "email": "joao111@raro.com.br",
+      "createdAt": "2022-05-09T21:05:05.787Z",
+      "updatedAt": "2022-05-09T21:05:05.787Z"
+    },
+    {
+      "id": "e341e494-0ca0-42b8-9b11-8d00f1102fca",
+      "name": "Raro Academy",
+      "email": "loud@rihanna.com",
+      "createdAt": "2022-05-09T21:09:29.745Z",
+      "updatedAt": "2022-05-09T21:09:29.745Z"
+    },
+    {
+      "id": "d8272d9b-4390-494c-81ed-7a99835b9e3b",
+      "name": "teste",
+      "email": "teste@teste.gov",
+      "createdAt": "2022-05-09T21:16:09.540Z",
+      "updatedAt": "2022-05-09T21:16:09.540Z"
+    },
+    {
+      "id": "8cf7d50a-ca38-47ff-979a-712cadf124a9",
+      "name": "Iury Oliveira",
+      "email": "asdhaishi@shdauishdiua.com",
+      "createdAt": "2022-05-09T21:16:17.976Z",
+      "updatedAt": "2022-05-09T21:16:17.976Z"
+    },
+    {
+      "id": "95c01068-76f9-4b12-9306-5fd48ead660b",
+      "name": "asdhaiusdhuiq",
+      "email": "hsaduishiua@sdhauisd.com",
+      "createdAt": "2022-05-09T21:18:42.503Z",
+      "updatedAt": "2022-05-09T21:18:42.503Z"
+    },
+    {
+      "id": "373b0f54-396c-40b4-8149-937fa8195a03",
+      "name": "kikoo",
+      "email": "kiko@lou.com",
+      "createdAt": "2022-05-09T00:23:23.966Z",
+      "updatedAt": "2022-05-09T21:19:18.577Z"
+    },
+    {
+      "id": "c53f355c-4fc8-4020-a7d4-3fdc2d5edb8a",
+      "name": "Joãooaaaaa",
+      "email": "joao11aa@raro.com.br",
+      "createdAt": "2022-05-09T00:18:13.848Z",
+      "updatedAt": "2022-05-09T00:18:13.848Z"
+    },
+    {
+      "id": "c8e5887a-99a4-41e5-8c73-d9d900a64285",
+      "name": "Joãooaaaaaaaaaaaa",
+      "email": "joao11aaaaaaaaaa@raro.com.br",
+      "createdAt": "2022-05-09T00:19:09.084Z",
+      "updatedAt": "2022-05-09T00:19:09.084Z"
+    },
+    {
+      "id": "e29bf1f2-e940-4c58-a754-81a4b1fc8e60",
+      "name": "marta",
+      "email": "marta@marta.com",
+      "createdAt": "2022-05-09T00:21:15.182Z",
+      "updatedAt": "2022-05-09T00:21:15.182Z"
+    },
+    {
+      "id": "cbc32abd-8cba-4911-8899-567ee915ec56",
+      "name": "Raro",
+      "email": "raro@raro.com",
+      "createdAt": "2022-05-07T19:38:19.884Z",
+      "updatedAt": "2022-05-07T19:38:19.884Z"
+    },
+    {
+      "id": "45b56412-cad7-4623-97f9-e8191e6aed86",
+      "name": "Anna Purdy IV",
+      "email": "jeremy64@hotmail.com",
+      "createdAt": "2022-05-09T00:32:43.407Z",
+      "updatedAt": "2022-05-09T00:32:43.407Z"
+    },
+    {
+      "id": "9f07dc1f-fa29-4d44-978c-e77a0e5c0dca",
+      "name": "Queen",
+      "email": "rock@email.com",
+      "createdAt": "2022-05-07T21:26:53.956Z",
+      "updatedAt": "2022-05-07T21:26:53.956Z"
+    },
+    {
+      "id": "8fa33414-ff09-44d6-ae3d-6c1467237aef",
+      "name": "Queen",
+      "email": "rockinroll@email.com",
+      "createdAt": "2022-05-07T21:28:27.492Z",
+      "updatedAt": "2022-05-07T21:28:27.492Z"
+    },
+    {
+      "id": "1c994914-9258-4dfc-80e1-dfdc8c1ded42",
+      "name": "Jacob Prosacco V",
+      "email": "cornell76@hotmail.com",
+      "createdAt": "2022-05-09T00:33:55.819Z",
+      "updatedAt": "2022-05-09T00:33:55.819Z"
+    },
+    {
+      "id": "8739c9d8-f1e2-4323-bbbb-6349feaea8c0",
+      "name": "nome inexistente",
+      "email": "email@email.com",
+      "createdAt": "2022-05-09T00:57:34.079Z",
+      "updatedAt": "2022-05-09T00:57:34.079Z"
+    },
+    {
+      "id": "d7efac59-112b-49d7-8011-312a38e0bef3",
+      "name": "asdf",
+      "email": "1234@123.com",
+      "createdAt": "2022-05-09T00:58:39.040Z",
+      "updatedAt": "2022-05-09T00:58:39.040Z"
+    },
+    {
+      "id": "124706c7-7e64-45b4-9381-32510a4f3ac0",
+      "name": "Leon Johnston",
+      "email": "adrienne_buckridge22@gmail.com",
+      "createdAt": "2022-05-09T00:59:34.975Z",
+      "updatedAt": "2022-05-09T00:59:34.975Z"
+    },
+    {
+      "id": "785981ed-82ed-4ead-9e0f-b188bbcad637",
+      "name": "Juana Rolfson",
+      "email": "amelie_frami41@gmail.com",
+      "createdAt": "2022-05-09T02:39:29.596Z",
+      "updatedAt": "2022-05-09T02:39:29.596Z"
+    },
+    {
+      "id": "c641d22c-1de2-4e90-a02e-efa24257aea2",
+      "name": "teste",
+      "email": "teste@email.com",
+      "createdAt": "2022-05-09T02:48:19.632Z",
+      "updatedAt": "2022-05-09T02:48:19.632Z"
+    },
+    {
+      "id": "6f0760bf-87eb-4e0d-9418-66df6758f309",
+      "name": "nome",
+      "email": "email123@email.com",
+      "createdAt": "2022-05-09T02:50:12.483Z",
+      "updatedAt": "2022-05-09T02:50:12.483Z"
+    },
+    {
+      "id": "9c3585a9-b2df-4236-97cc-2c5148149073",
+      "name": "teste",
+      "email": "abc@email.com",
+      "createdAt": "2022-05-09T02:57:45.210Z",
+      "updatedAt": "2022-05-09T02:57:45.210Z"
+    },
+    {
+      "id": "d7046bb4-9910-4062-b043-aa530532e462",
+      "name": "rosicleia",
+      "email": "rosicleia@email.com",
+      "createdAt": "2022-05-09T03:02:46.696Z",
+      "updatedAt": "2022-05-09T03:02:46.696Z"
+    },
+    {
+      "id": "a6b28646-9b80-49ce-babe-2ccf22ca3c0b",
+      "name": "brnobruno",
+      "email": "bruno@gmail.com",
+      "createdAt": "2022-05-09T03:02:54.280Z",
+      "updatedAt": "2022-05-09T03:02:54.280Z"
+    },
+    {
+      "id": "33fe94c0-1765-46b5-aacf-fb78ece95805",
+      "name": "Raro Labs",
+      "email": "raro@labs.com",
+      "createdAt": "2022-05-08T11:51:15.547Z",
+      "updatedAt": "2022-05-09T06:15:59.545Z"
+    },
+    {
+      "id": "b75e2a70-51c3-4faf-b5d1-daa22558fe2a",
+      "name": "Raro",
+      "email": "raro@academy.com",
+      "createdAt": "2022-05-09T05:11:27.923Z",
+      "updatedAt": "2022-05-09T17:19:06.254Z"
+    },
+    {
+      "id": "6796ad24-19aa-464d-9fa3-7751d80308c6",
+      "name": "JHiahsdas asjhdgausgd",
+      "email": "kasdasd@asdas.com",
+      "createdAt": "2022-05-09T17:52:01.360Z",
+      "updatedAt": "2022-05-09T17:52:01.360Z"
+    },
+    {
+      "id": "46f266e4-0aa5-4d4a-bfe7-621379220ca1",
+      "name": "teste",
+      "email": "teste@teste.teste",
+      "createdAt": "2022-05-09T18:20:39.784Z",
+      "updatedAt": "2022-05-09T18:20:39.784Z"
+    },
+    {
+      "id": "568087ed-79bf-4716-99d7-c3e8eab284b7",
+      "name": "ssss",
+      "email": "ssss@sss.ss",
+      "createdAt": "2022-05-09T18:35:47.104Z",
+      "updatedAt": "2022-05-09T18:35:47.104Z"
+    },
+    {
+      "id": "39d1f638-557c-444f-ab22-d273d3ca03f1",
+      "name": "vvvvv",
+      "email": "vvv@vv.vvv",
+      "createdAt": "2022-05-09T18:36:19.346Z",
+      "updatedAt": "2022-05-09T18:36:19.346Z"
+    },
+    {
+      "id": "33c4191d-c4a1-40eb-89ce-5083a019715a",
+      "name": "sabo",
+      "email": "sabo@g.com",
+      "createdAt": "2022-05-09T18:37:40.252Z",
+      "updatedAt": "2022-05-09T18:37:40.252Z"
+    },
+    {
+      "id": "ec7c2acc-42d9-4d7a-9d27-8f79f409bb9a",
+      "name": "lerolero",
+      "email": "lerolero@lero.lero",
+      "createdAt": "2022-05-09T18:38:51.537Z",
+      "updatedAt": "2022-05-09T18:38:51.537Z"
+    },
+    {
+      "id": "1813fc2e-7887-4a3b-99a2-95c2090e1bd3",
+      "name": "vinicius",
+      "email": "vini@gmail.com",
+      "createdAt": "2022-05-09T18:21:23.825Z",
+      "updatedAt": "2022-05-09T19:28:14.790Z"
+    }
+  ]

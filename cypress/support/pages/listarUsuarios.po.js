@@ -19,6 +19,7 @@ class ListarUsuarios {
     itensPorPagina = 6;
     minQuantItensPagina = 1;
     maxQuantItensPagina = 6;
+    paginaAux = 0;
 
     visitar() {
         cy.visit("");
@@ -71,6 +72,13 @@ class ListarUsuarios {
 
     verificarBotaoPaginacaoVoltar() {
         cy.get(this.botaoPaginacaoVoltar).should("be.visible");
+    }
+    verificarPaginaAtual(pagina) {
+        cy.contains(this.liPaginacaoAtual, pagina).should("be.visible");
+    }
+
+    verificarBotaoProximoDesabilitado() {
+        cy.get(this.botaoPaginacaoProximo).should("be.disabled").and("be.visible");
     }
 }
 
