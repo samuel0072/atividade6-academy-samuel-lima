@@ -2,6 +2,7 @@
 
 import { detalhesUsuarioPage } from "../pages/detalhesUsuarioPage.po";
 import {listarUsuarios} from "../pages/listarUsuarios.po";
+
 /* -------------- Given's -------------- */
 Given("estou na tela de detalhes de um usuário", ()=> {
     var id = "id-de-teste";
@@ -22,6 +23,9 @@ Given("estou na tela de detalhes de um usuário", ()=> {
         statusCode: 200,
         fixture: "usuarioParaAtualizar.json"
     });
+
+    var viewport = Cypress.env("VIEWPORT");
+    cy.viewport(viewport);
 
     cy.visit("/users/" + id);
 });

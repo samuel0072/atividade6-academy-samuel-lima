@@ -3,6 +3,7 @@
     "testFiles": "**/*.feature",
     "env" : {
         "TAGS" : "not @ignore",
-        "CRUD_API_URL": "https://crud-api-academy.herokuapp.com/api/v1"
+        "CRUD_API_URL": "https://crud-api-academy.herokuapp.com/api/v1",
+        "VIEWPORT": "macbook-13"
     }
 }

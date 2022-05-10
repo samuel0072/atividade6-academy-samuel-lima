@@ -4,6 +4,8 @@ import {listarUsuarios} from "../pages/listarUsuarios.po";
 
 /* ------------------------- Given's ------------------------- */
 Given("acessei a página inicial", () => {
+    var viewport = Cypress.env("VIEWPORT");
+    cy.viewport(viewport);
     cy.visit("");
 });
 

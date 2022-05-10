@@ -30,6 +30,9 @@ Given("existem usuários cadastrados para mais de uma página de resultados", ()
         fixture: "usuarios2.json"
     }); 
 
+    var viewport = Cypress.env("VIEWPORT");
+    cy.viewport(viewport);
+
     cy.visit("");
 });
 
@@ -60,6 +63,9 @@ Given("estou na penultima página", () => {
 /* ------------------------- When's ------------------------- */
 
 When("acesso o CRUD Front-end", () => {
+    var viewport = Cypress.env("VIEWPORT");
+    cy.viewport(viewport);
+
     listarUsuarios.visitar();
 });
 

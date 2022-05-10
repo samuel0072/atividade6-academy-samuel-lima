@@ -28,3 +28,17 @@ Feature: Listar Usuários
         When clico no botão de próxima página
         Then estou na página seguinte de resultados
         And o botão de próxima página esta desabilitado
+    @ignore
+    Scenario: Voltar para a página anterior da lista de resultados
+        Given existem usuários cadastrados para mais de uma página de resultados
+        And não estou na primeira página
+        When clico no botão de voltar página
+        Then estou na página anterior
+
+    @ignore
+    Scenario: Voltar pra primeira página
+        Given existem usuários cadastrados para mais de uma página de resultados
+        And estou na segunda página
+        When clico no botão de voltar página
+        Then estou na primeira página 
+        And o botão de voltar página esta desabilitado

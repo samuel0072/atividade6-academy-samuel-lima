@@ -1,9 +1,13 @@
 /// <reference types="cypress" />
 import { criarUsuario } from "../pages/criarUsuario.po";
 
+
 /* -------------- Given's -------------- */
 
 Given("acessei a pagina de novo usuário", () => {
+    var viewport = Cypress.env("VIEWPORT");
+    cy.viewport(viewport);
+
     cy.visit("/users/novo");
     var url = Cypress.env("CRUD_API_URL") + "/users";
     cy.intercept({
